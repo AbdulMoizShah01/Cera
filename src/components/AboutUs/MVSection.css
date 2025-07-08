@@ -1,0 +1,173 @@
+/* MissionVisionBackground.css */
+.mission-vision-background {
+  padding: 2rem 20px;
+  background-color: #f9fbfd;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #44c2c7;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: #44c2c7;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.cards-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.bottom-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 15px 50px rgba(10, 37, 64, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.background-card {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-card, .vision-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 430px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(10, 37, 64, 0.15);
+}
+
+.background-card .icon-container {
+  background: linear-gradient(135deg, #44c2c7 0%, #2a6b8f 100%);
+}
+
+.mission-card .icon-container {
+  background: linear-gradient(135deg, #44c2c7 0%, #44c2c7 100%);
+}
+
+.vision-card .icon-container {
+  background: linear-gradient(135deg, #44c2c7 0%, #5d8ea9 100%);
+}
+
+.icon-container {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container svg {
+  width: 50px;
+  height: 50px;
+  stroke: white;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #0a2540;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5e7a90;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .card {
+    padding: 35px 25px;
+  }
+  
+  .card h3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-vision-background {
+    padding: 80px 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .background-card {
+    max-width: 100%;
+  }
+  
+  .icon-container {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .icon-container svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .card h3 {
+    font-size: 1.6rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+  
+  .icon-container {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .icon-container svg {
+    width: 40px;
+    height: 40px;
+  }
+}
